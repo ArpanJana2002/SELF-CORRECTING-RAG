@@ -117,12 +117,4 @@ self_correcting_rag/
 - **Streaming**: swap `app.invoke` for `app.astream_events` in a web backend (e.g. FastAPI)
   to stream node-by-node progress to a frontend.
 
-## Notes on this implementation
 
-- Grading is done via `llm.with_structured_output(PydanticModel)`, which is far more
-  reliable than asking the model to output "yes"/"no" in free text and parsing it.
-- `MAX_CORRECTION_LOOPS` (default 3) prevents infinite loops if the model keeps grading
-  its own output as ungrounded/unhelpful.
-- All graph logic (retrieval, chunking, Chroma storage, routing between nodes, loop
-  bounding) has been tested with fake embeddings/LLMs to confirm the control flow is
-  correct; you supply real API keys to get real answers.
