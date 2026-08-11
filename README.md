@@ -103,6 +103,7 @@ self_correcting_rag/
     ├── nodes.py             # graph node functions + conditional routers
     └── graph.py            # StateGraph wiring (the actual LangGraph graph)
 ```
+<img width="943" height="130" alt="Screenshot 2026-08-11 120101" src="https://github.com/user-attachments/assets/7ddf78d5-f9ee-4c2c-b794-2da9d6f2d3fb" />
 
 ## Extending it
 
