@@ -1,0 +1,26 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files
+.env
+
+# Local vector DB and model artifacts
+vectorstore/
+*.sqlite3
+
+# Editor metadata
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.cache
+
+# OS files
+.DS_Store
